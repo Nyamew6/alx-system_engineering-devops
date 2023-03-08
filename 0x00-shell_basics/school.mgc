@@ -1,4 +1,3 @@
-0 then press tab key SCHOOL School data
-!:mime school.mgc
-Exit vi
-file -C -m school.mgc
+#!/bin/bash
+0 string SCHOOL School data file
+file -C -m school.magic
