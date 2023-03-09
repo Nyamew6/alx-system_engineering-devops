@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Get the current owner of the file hello
+current_owner=$(stat -c %U hello)
+
+# Check if the current owner is guillaume
+if [ "$current_owner" = "guillaume" ]; then
+  # Change the owner of the file hello to betty
+  sudo chown betty hello
+  echo "Changed owner of hello from guillaume to betty."
+else
+  echo "The file hello is not owned by guillaume."
+fi

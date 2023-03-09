@@ -1,2 +1,4 @@
 #!/bin/bash
 sudo chown vincent:staff _hello
+change_ownership.sh
+chmod +x change_ownership.sh
